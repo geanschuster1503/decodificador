@@ -1,0 +1,149 @@
+body {
+
+    background-color:#E6E6FA;
+
+
+}
+
+h1 {
+
+    color: black;
+    font-size: 3vw;
+
+}
+
+.caixa-titulo {
+
+    margin-left: 1vw;
+
+
+}
+
+
+.caixa-input-texto {
+
+    padding-top: 1vw;
+    text-align: center;
+    background-color: white;
+    margin-left: 2vw;
+    margin-top: 3vw;
+    width: 30vw;
+    height: 25vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    border-radius: 8px;
+    border: 5px;
+    border-style: solid;
+    border-color: black;
+}
+
+
+.titulo-input {
+
+    margin-left: 1vw;
+
+}
+
+p {
+
+    font-weight: 800;
+
+}
+
+
+
+#input-texto {
+
+    width: 25vw;
+    height: 8vw;
+    background-color: white;
+    border-radius: 8px;
+    outline-offset: 2px;
+    text-indent: 3px;
+    text-transform: lowercase;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    resize: none;
+    outline: 0;
+}
+
+.btn-criptografar {
+    margin-right: 5vw;
+    color: white;
+    background-color: black;
+    height: 35px;
+    width: 140px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 1vw;
+}
+
+.btn-descriptografar {
+
+    width: 140px;
+    cursor: pointer;
+    background-color: #000000;
+    border-radius: 8px;
+    height: 35px;
+    color: aliceblue;
+}
+
+#output {
+
+    padding-top: 1vw;
+    width: 30vw;
+    height: 25vw;
+    padding-left: 1vw;
+    padding-right: 2vw;
+    border-radius: 8px;
+    background-color: white;
+    margin-left: 50vw;
+    margin-top: 1vw;
+    position: absolute;
+    border: 6px;
+    border-style: solid;
+    border-color: black;
+    align-items: center;
+    color: black;
+
+}
+
+.titulo-output {
+
+    margin-left: 1vw;
+    color: #000000;
+    text-align: center;
+
+}
+
+.input-saida {
+
+   
+    margin-left: 4vw;
+    width: 25vw;
+    height: 8vw;
+    background-color: #1C1C1C;
+    border-style: solid;
+    border-color: white;
+    border-radius: 8px;
+    outline-offset: 2px;
+    text-indent: 3px;
+    text-transform: lowercase;
+    background: transparent;
+    color:white;
+}
+
+
+.btn-copiar{
+    border: 2px solid var(--cortitulo);
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    width: 150px;
+    height: 50px;
+    margin-bottom: 10%;
+    margin-left: 30%;
+    cursor: pointer;
+}

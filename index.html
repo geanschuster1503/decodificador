@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="/icon.png">
+    <title>Decodificador</title>
+</head>
+
+<body>
+
+    <div class="caixa-titulo">
+        <h1> Decodificador </h1>
+    </div>
+
+    <div id="output">
+        <h2 class="titulo-output"> Sua mensagem Criptografada aparecerá aqui! </h2>
+        <br>
+         <input class="input-saida " type="text"> 
+        <br>
+
+    </div>
+    
+    
+    <div class="caixa-input-texto">
+        <h2 class="titulo-input"> Digite seu texto aqui... </h2>
+        <br>
+        <input name="campo" id="input-texto" type="text" placeholder="Digite seu Texto" required>
+        <p> Não devem ser utilizados letras com acentos nem caracteres especiais! </p>
+        <button onclick=" criptografar() " class=" btn-criptografar "> Criptografar </button>
+        <button onclick=" descriptografar() " class=" btn-descriptografar "> Descriptografar </button>
+    </div>
+
+
+
+
+
+
+    
+</body>
+</html>
+
+<script>
+var textInput = document.querySelector("#input-texto");
+var outInput = document.querySelector("#output");
+
+
+function criptografar(){
+
+  var texto = textInput.value;
+
+  var resultCripto = texto.replace(/e/g, "enter").replace(/i/g, "imes").replace(/a/g, "ai").replace(/o/g, "ober").replace(/u/g, "ufat")
+
+  
+  document.getElementById('output').innerHTML = '<textarea readonly id="input-texto">' + resultCripto + 
+  '</textarea>' + '<button class="btn-copiar" id="copiar" onclick="copiar()">Copiar</button>'
+}
+
+function descriptografar(){
+
+    var texto = textInput.value;
+
+    var resultDescripto = texto.replace(/enter/g, "e").replace(/imes/g, "i").replace(/ai/g, "a").replace(/ober/g, "o").replace(/ufat/g, "u");
+  
+    document.getElementById('output').innerHTML = '<textarea readonly id="input-texto">' + resultDescripto + 
+    '</textarea>' + '<button class="btn-copiar" id="copiar" onclick="copiar()">Copiar</button>'
+}
+
+function copiar() {
+    var textoCop = document.getElementById('input-texto');
+  
+    textoCop.select();
+    document.execCommand('copy');
+    alert("seu Texto foi copiado com sucesso!");
+}  
+</script>
